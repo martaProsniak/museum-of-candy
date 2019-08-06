@@ -54,9 +54,9 @@
     <section class="container-fluid px-0 mt-5">
         <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1">
-                <img src="../img/candies.jpg" alt="" class="img-fluid">
+                <img src="../img/milk.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2 mb-5">
+            <div class="col-md-6 text-center order-1 order-md-2 mb-xs-5">
                 <div class="row justify-content-center blurb">
                     <div class="col-10 col-lg-8">
                         <h2 class="mb-3">MUSEUM OF CANDY </h2>
@@ -72,6 +72,48 @@
         </div>
     </section>
 
+    <section class="container-fluid px-0 mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                    <img src="../img/eggs.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 mb-xs-5">
+                    <div class="row justify-content-center blurb">
+                        <div class="col-10 col-lg-8">
+                            <h2 class="mb-3">MUSEUM OF CANDY </h2>
+                            <img src="../img/lolli.png" alt="" class="d-none d-lg-inline mb-3">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda tempore commodi
+                                perspiciatis nisi sit, dolorum ea aut velit voluptas repellendus obcaecati dignissimos culpa
+                                quos iusto?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid px-0 mt-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-2 order-md-1">
+                        <img src="../img/more_donuts.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 text-center order-1 order-md-2 mb-xs-5">
+                        <div class="row justify-content-center blurb">
+                            <div class="col-10 col-lg-8">
+                                <h2 class="mb-3">MUSEUM OF CANDY </h2>
+                                <img src="../img/lolli.png" alt="" class="d-none d-lg-inline mb-3">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda tempore commodi
+                                    perspiciatis nisi sit, dolorum ea aut velit voluptas repellendus obcaecati dignissimos culpa
+                                    quos iusto? Velit porro reprehenderit vel aperiam excepturi quidem sit harum ad eveniet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
     <!-- Optional JavaScript to enable Bootstrap functionalities -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -82,6 +124,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script>
+            $(function () {
+                $(document).scroll(function(){
+                    var $nav = $('#mainNavbar');
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
+                });
+            })
+        </script>
 </body>
 
 </html>
